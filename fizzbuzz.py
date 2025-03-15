@@ -19,6 +19,8 @@ def get_input():
 
 def count_and_evaluate_numbers(range_max, altered_range):
     """Function counts through all numbers up to user defined max and decides whether to replace"""
+    # range_max: the user defined endpoint for how far to count
+    # altered_range: the list where we store numbers, and replacement fizzes, buzzes, and fizzbuzzes
     for num in range(1, range_max+1):
         if num % 5 == 0 and num % 3 == 0:
             fizzbuzz(altered_range)
@@ -32,21 +34,24 @@ def count_and_evaluate_numbers(range_max, altered_range):
 
 def fizz(altered_range):
     """Function prints Fizz instead of a number divisible by 3"""
+    # altered_range: the list where we store numbers, and replacement fizzes, buzzes, and fizzbuzzes
     altered_range.append("Fizz")
 
 
 def buzz(altered_range):
     """Function prints Buzz instead of a number divisible by 5"""
+    # altered_range: the list where we store numbers, and replacement fizzes, buzzes, and fizzbuzzes
     altered_range.append("Buzz")
 
 
 def fizzbuzz(altered_range):
     """Function prints FizzBuzz instead of a number divisible by 3 and 5"""
+    # altered_range: the list where we store numbers, and replacement fizzes, buzzes, and fizzbuzzes
     altered_range.append("FizzBuzz")
 
 
 def main():
-    """the main function"""
+    """the main function to run the program"""
     altered_range = []
 
     range_max = get_input()
