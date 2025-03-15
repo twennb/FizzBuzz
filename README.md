@@ -24,8 +24,8 @@ Prints "Fizz" instead of numbers that are a multiple of 3, "Buzz" for multiple o
 
 ## Features
 
-*Asks user how high the program should count
-*Prints each number, Fizz, Buzz, or FizzBuzz as appropriate
+* Asks user how high the program should count
+* Prints each number, Fizz, Buzz, or FizzBuzz as appropriate
 
 ## Possible Improvements
 
